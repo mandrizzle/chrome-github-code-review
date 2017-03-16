@@ -151,8 +151,16 @@ AppInteractionService.prototype.respondToHotKey = function(keyCode) {
       this.main.generateApp();
     }
     
+    var tree = $('#jk-hierarchy')
     if (this.isSidebarHaveContents()) {
-      $('#jk-hierarchy').toggle();  
+      if($('#jk-hierarchy:visible').length) {
+        $("html").css('margin-left', '')
+        tree.hide();
+      } else {
+        $("html").css('margin-left', tree.width())
+        tree.show();  
+
+      }
     }
     else {
       $("#jk-notice").show().delay(600).fadeOut(600);

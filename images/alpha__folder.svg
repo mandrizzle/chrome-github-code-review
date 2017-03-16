@@ -1,1 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?><svg id="dxicon" xmlns="http://www.w3.org/2000/svg" viewBox="-1.333333 -1.333333 34.666667 34.666667" width="26" height="26"><style>.dxst0{fill-rule:evenodd;clip-rule:evenodd}</style><path class="dxst0" d="M26.947 24.602a.24.24 0 0 1-.238.225H5.29a.24.24 0 0 1-.237-.225l-.517-12.947a.217.217 0 0 1 .22-.226h22.488c.126 0 .225.1.22.225l-.517 12.947zM14.185 9.862H5.977L6.847 7h7.582l.536 1.492H26.22l.268 1.37H14.185z"/></svg>
+<svg style="fill: #8197B1" height="16" width="14" xmlns="http://www.w3.org/2000/svg">
+  <path d="M13 4H7v-1c0-0.66-0.31-1-1-1H1c-0.55 0-1 0.45-1 1v10c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V5c0-0.55-0.45-1-1-1z m-7 0H1v-1h5v1z" />
+</svg>

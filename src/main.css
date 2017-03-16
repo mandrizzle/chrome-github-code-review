@@ -1,42 +1,52 @@
 #jk-hierarchy {
-  max-width: 35%;
+  width: 300px;
   overflow-x: scroll;
   position: fixed;
   white-space: nowrap;
-  z-index: 35;
   top: 0;
-  padding: 18px 10px 18px 10px;
-  right: 0;
+  left: 0;
+  bottom: 0;
   overflow-y: scroll;
+  z-index: 10000000;
   height: 100%;
+  border-right: 1px solid #ddd;
 }
 
 #jk-hierarchy .current {
-  background-color: lightblue;
+  background-color: rgb(190, 235, 255) !important;
 }
 
 
 #jk-hierarchy ul {
-  padding-left: 10px;
+  padding-left: 4px;
 }
 
 #jk-hierarchy ul li {
   cursor: pointer;
-  padding: 0.15em 0 0.15em 1.5em;
+  padding: 1px 12px 1px 12px;
   margin-bottom: 0.2em;
-  text-indent: 0.4em;
+  text-indent: 15px;
   list-style:none;
-  background-size: 1.8em;
+  line-height: 24px;
+  color: rgb(3, 102, 214);
   background-repeat: no-repeat;
   background-image: url('chrome-extension://__MSG_@@extension_id__/images/alpha__page.svg');
+  background-size: 12px;
+  background-position: 8px center;
+}
+
+#jk-hierarchy ul li:hover {
+  background-color: #e7e7e7;
 }
 
 #jk-hierarchy ul li.folder {
-  background-image: url('chrome-extension://__MSG_@@extension_id__/images/objects__folder--open.svg');
+  background-image: url('chrome-extension://__MSG_@@extension_id__/images/alpha__folder.svg');
+  background-size: 14px;
 }
 
 #jk-hierarchy ul li.folder.collapsed {
   background-image: url('chrome-extension://__MSG_@@extension_id__/images/alpha__folder.svg');
+  background-size: 14px;
 }
 
 #jk-notice {
@@ -48,3 +58,4 @@
   z-index: 100;
   padding: 10px 20px;
 }
+

@@ -35,7 +35,7 @@ Main.prototype.generateApp = function() {
     }
   });
   
-  var hierarchy = $('<p id="jk-hierarchy"></p>');
+  var hierarchy = $('<div id="jk-hierarchy"></div>');
 
   var hierarchyGenerator = new HierarchyGeneratorService();
   hierarchyGenerator.generateAndApplyHierarchyHtml(files, hierarchy);
