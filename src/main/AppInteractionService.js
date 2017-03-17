@@ -9,12 +9,12 @@ function AppInteractionService(toolBarHeight, hotKeysService, main) {
   this.hotKeysService = hotKeysService;
 
   this.main = main;
-
-}
+  this.tracker = null;
+  }
 
 AppInteractionService.prototype.attachFolderCollapseBehavior = function(element) {
 
-  $(element).find('.folder').click(function () {
+  $(element).find('.jk-folder').click(function () {
     $header = $(this);
     $content = $header.next();
     $content.slideToggle(10, function () {
@@ -33,6 +33,26 @@ AppInteractionService.prototype.attachJumpOnClickBehavior = function(element) {
     that.currentFileId = $(this).data('file-id').split('-')[1];
   });
   
+  this.tracker = appear({
+      init: function init(){
+        console.log('dom is ready');
+      },
+      elements: function elements(){
+        // work with all elements with the class "track"
+        return $("[id^='diff-']");
+      },
+      appear: function appear(el){
+        console.log('visible', el);
+        that.currentFileId = el.id.split('-')[1];
+        that.updateCurentDiffPos();
+      },
+      disappear: function disappear(el){
+        console.log('no longer visible', el);
+      },
+      bounds: 40,
+      reappear: true,
+      debounce: 24
+    });
 };
 
 AppInteractionService.prototype.scrollTo = function(element) {

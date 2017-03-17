@@ -39,12 +39,12 @@
   background-color: #e7e7e7;
 }
 
-#jk-hierarchy ul li.folder {
+#jk-hierarchy ul li.jk-folder {
   background-image: url('chrome-extension://__MSG_@@extension_id__/images/alpha__folder.svg');
   background-size: 14px;
 }
 
-#jk-hierarchy ul li.folder.collapsed {
+#jk-hierarchy ul li.jk-folder.collapsed {
   background-image: url('chrome-extension://__MSG_@@extension_id__/images/alpha__folder.svg');
   background-size: 14px;
 }

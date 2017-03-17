@@ -107,7 +107,7 @@ HierarchyGeneratorService.prototype.generateAndApplyHtml = function(hierarchy, s
     var item = $('<li>' + label + '</li>');
       
     if (typeof structure[index] === 'object') {
-      item.addClass('folder');
+      item.addClass('jk-folder');
     }
     else if (typeof structure[index] === 'string') {
       item = $('<li><span class="file-name">' + label + '</span></li>');
